@@ -21,6 +21,7 @@ body {
 }
 .part-logo {
   color: var(--accent-text-color);
+  margin-top: 0;
 }
 .logo:hover,
 .logo:focus {
@@ -31,7 +32,7 @@ ul {
   list-style: none;
 }
 /* nav */
-.nav {
+.main-nav {
   display: flex;
   align-items: center;
 }
@@ -80,17 +81,22 @@ ul {
   color: var(--accent-text-color);
 }
 /* hero */
+.hero {
+  text-align: center;
+}
 .hero-title {
   font-style: 400;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
-  margin-top: 230px;
 }
 
 /* feauture */
+.feauture-list {
+  display: flex;
+  margin-top: 94px;
+}
 .feauture-list .title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -105,6 +111,9 @@ ul {
 }
 
 /* section */
+.work-item {
+  display: flex;
+}
 .work-list {
   color: var(--title-text-color);
   font-weight: 700;
@@ -121,6 +130,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  margin-top: 50px;
 }
 
 /* team */
@@ -135,27 +145,56 @@ ul {
   text-align: center;
   margin-top: 188px;
 }
+.team .item {
+  display: flex;
+  margin-left: 30px;
+}
+.team .space {
+  margin-left: 30px;
+}
 .team .team-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-bottom: 10px;
+}
+.icon {
+  display: flex;
+}
+.space .sotial {
+  margin-left: 39px;
 }
 
 /* clients */
+
+.clients .item {
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients .list {
+  margin-left: 30px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 175px;
+  height: 90px;
+  text-align: center;
+  padding-top: 25px;
+}
 .clients-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-top: 188px;
+  margin-top: 94px;
 }
 
 /* footer */
 .footer {
   background: #2f303a;
+  margin-top: 94px;
 }
 
 .footer .contacts-list {
