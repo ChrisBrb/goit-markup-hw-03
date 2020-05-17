@@ -17,7 +17,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-  margin-top: 24px;
+  margin-left: 100px;
 }
 .part-logo {
   color: var(--accent-text-color);
@@ -66,7 +66,7 @@ ul {
 /* contacts */
 .contacts {
   display: flex;
-  margin-left: auto;
+  margin-left: 100px;
 }
 .contacts .item + .item {
   margin-left: 50px;
@@ -111,6 +111,10 @@ ul {
 }
 
 /* section */
+.work {
+margin-left: 30px;
+}
+
 .work-item {
   display: flex;
 }
@@ -147,11 +151,8 @@ ul {
 }
 .team .item {
   display: flex;
-  margin-left: 30px;
 }
-.team .space {
-  margin-left: 30px;
-}
+
 .team .team-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -160,9 +161,18 @@ ul {
 }
 .icon {
   display: flex;
+  text-align: left;
+}
+
+.space {
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: var(--primary-white-color);
+  margin-left: 30px;
 }
 .space .sotial {
-  margin-left: 39px;
+  margin-left: 35px;
 }
 
 /* clients */
@@ -178,7 +188,7 @@ ul {
   box-sizing: border-box;
   border-radius: 4px;
   width: 175px;
-  height: 90px;
+
   text-align: center;
   padding-top: 25px;
 }
@@ -193,10 +203,14 @@ ul {
 
 /* footer */
 .footer {
-  background: #2f303a;
+  display: flex;
   margin-top: 94px;
+  background: #2f303a;
+  padding: 50px;
 }
-
+.footer .section {
+  margin-left: auto;
+}
 .footer .contacts-list {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -204,11 +218,15 @@ ul {
   font-style: normal;
 }
 
-.footer-text {
+.footer-title {
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+}
+
+.footer .footer-button {
+  display: flex;
 }
 
 /* button */
@@ -225,7 +243,9 @@ ul {
   padding-right: 30px;
   margin-top: 46px;
   text-align: center;
+  margin-right: 7px;
 }
+
 
 /* стилі portfolio.css */
 .filter {
@@ -242,24 +262,38 @@ ul {
   color: var(--primary-white-color);
 }
 
-.sitelist {
-  text-decoration: none;
-}
 
-.sitelist .title {
+.flex-element .title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 
-.sitelist .text {
+.flex-element .text {
   color: var(--primary-text-color);
   text-decoration: none;
 }
 
-.sitelist .preview {
+.flex-element .preview {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1, 87;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+.flex-element {
+  width: 380px;
+  background-color: var(--primary-white-color);
+  margin-right: 15px;
+}
+.flex-element:nth-child(3n) {
+  margin-right: 0;
+}
+.flex-element .link {
+  text-decoration: none;
 }
