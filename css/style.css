@@ -17,6 +17,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  margin-top: 24px;
 }
 .part-logo {
   color: var(--accent-text-color);
@@ -29,9 +30,23 @@ body {
 ul {
   list-style: none;
 }
-
+/* nav */
+.nav {
+  display: flex;
+  align-items: center;
+}
 /* site nav */
+.site-nav {
+  display: flex;
+  margin-left: 86px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -47,7 +62,14 @@ ul {
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
-
+/* contacts */
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts .item + .item {
+  margin-left: 50px;
+}
 .contacts .contacts-list {
   color: var(--primary-text-color);
   text-decoration: none;
@@ -102,6 +124,9 @@ ul {
 }
 
 /* team */
+.team {
+  background: #F5F4FA;
+}
 .team .team-list {
   color: var(--title-text-color);
   font-weight: 700;
@@ -152,15 +177,15 @@ ul {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
   text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  min-width: 200px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 46px;
-}
-
-.section {
-  margin-top: 320px;
+  text-align: center;
 }
 
 /* стилі portfolio.css */
