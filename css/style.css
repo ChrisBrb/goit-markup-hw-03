@@ -48,6 +48,7 @@ ul {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+  /* outline: 1px solid black; */
 }
 
 .display-block {
@@ -441,7 +442,9 @@ margin-left: 10px;
   justify-content: center;
   padding: 6px;
 }
-
+.filter .button {
+  margin-top: 0;
+}
 .filter .button:hover,
 .filter .button:focus {
   background-color: var(--accent-text-color);
@@ -468,6 +471,8 @@ margin-left: 10px;
 }
 
 .flex-container {
+  padding-left: 0;
+  width: 1230px;
   display: flex;
   flex-wrap: wrap;
   margin: 15px;
@@ -482,4 +487,7 @@ margin-left: 10px;
 }
 .flex-element .link {
   text-decoration: none;
+}
+.portfolio-section {
+  margin-bottom: 94px;
 }
